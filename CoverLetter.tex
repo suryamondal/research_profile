@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\usepackage{charter} % Use the Charter font for the document text
+
+%\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+%\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+%\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=5pt} % Slightly decrease the height of the signature field
+%\newlfmP{addrfromphone} % Print a phone number under the sender's address
+%\newlfmP{addrfromemail} % Print an email address under the sender's address
+%\PhrPhone{Phone} % Customize the "Telephone" text
+%\PhrEmail{Email} % Customize the "E-mail" text
+
+%\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{Suryanarayan Mondal} % Name
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+\greetto{Dear Prof. Vitaly Kudryavtsev,} % Greeting text
+\nameto{Prof. Vitaly Kudryavtsev} % Addressee of the letter above the to address
+
+\addrto{
+ The University of Sheffield,\\
+  UK.
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+  I am writing to apply for the position of Research Associate
+  in The University of Sheffield with an emphasis in developing calibration procedure for DUNE Far detector using cosmic muons and Monte-Carlo Modelling and analysis of simulated data from DUNE far detector,
+  that you advertised in INSPIRE-HEP Jobs. I did
+  PhD in India Based Neutrino Observatory. My thesis title is
+  ``Studies of Atmospheric Fluxes at the prototype iron calorimeter
+  detector''. I am confident that
+  my research interests make me an ideal candidate for this position.
+
+  During my PhD, I got an opportunity to work on various studies
+  related to RPC detectors and also cosmic ray physics. My journey in
+  PhD commenced with commissioning and troubleshooting of the
+  prototype ICAL made of the stack (12 layers) of large area RPCs
+  ($~$\,2\,m\,$\times$\,2\,m). I was part of the team in assembling
+  and troubleshooting the problems related to RPC detectors and their
+  readout electronics. I worked to characterise the RPC detectors using the noise rate and muon triggered data. Later I used the muon data recorded with the
+  detector stack to estimate the muon flux at the experimental site
+  and its comparison with different models used in extensive air
+  shower simulation. 
+  I spent substantial time of my PhD for
+  characterising the RPC detectors and their front-end modules, which
+  helps in improving the design parameters of the detector as well as
+  electronics.
+  Along with the detector related hardware, I also worked
+  on GEANT4
+  simulation and incorporation of the detector parameters in
+  simulation framework to reproduce the behaviour of the MC as close
+  as DATA.
+  My experience in data analysis will help in getting good
+  physics results from the detectors. Especially, I will be useful in
+  developing calibration techniques for the DUNE Far detector using cosmic muons or beam study as well doing Monte-Carlo Modelling and analysis of simulated data for DUNE Far detector.
+   Apart from the thesis work I am working on improving the
+  time/position resolution of the RPC detectors using
+  Time-Over-Threshold. 
+  
+  My experience in detector commissioning, troubleshooting and data
+  analysis would make me an excellent candidate for this position. I am
+  looking forward to hearing from you soon.
+
+%----------------------------------------------------------------------------------------
+\closeline{Sincerely yours,} % Closing text
+\end{newlfm}
+\end{document}
