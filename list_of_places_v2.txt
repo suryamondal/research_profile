@@ -11,13 +11,6 @@ https://inspirehep.net/jobs?sort=mostrecent&size=25&page=1&region=Europe&region=
 
 
 
-Fellowship for Tracker Upgrade in the CMS Firenze Group on “Development and validation of the Power System for the new Tracker detector of the CMS experiment"
-INFN, Florence • Europe
-physics.ins-detPostDoc • Experiments: CERN-LHC-CMS
-Deadline on Nov 29, 2022
-https://inspirehep.net/jobs/2159755
-
-
 Fellowship for Tracker Upgrade in the CMS Firenze Group on “Research and development activities for the new Tracker detector of the CMS experiment"
 INFN, Florence • Europe
 physics.ins-detPostDoc • Experiments: CERN-LHC-CMS
@@ -104,3 +97,11 @@ hep-exPostDoc Experiments: Fermilab-MI-DUNE
 Deadline on Oct 27, 2022
 https://inspirehep.net/jobs/2158234
 Applied on Oct 7, 2022
+
+
+Fellowship for Tracker Upgrade in the CMS Firenze Group on “Development and validation of the Power System for the new Tracker detector of the CMS experiment"
+INFN, Florence • Europe
+physics.ins-detPostDoc • Experiments: CERN-LHC-CMS
+Deadline on Nov 29, 2022
+https://inspirehep.net/jobs/2159755
+Applied on Nov 28, 2022
