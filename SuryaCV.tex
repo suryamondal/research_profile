@@ -22,6 +22,7 @@
 \setlength{\parindent}{4em}
 \setlength{\parskip}{0.5em}
 \usepackage[none]{hyphenat}
+\usepackage{ragged2e}
 %% Define variables here
 
 \begin{document}
@@ -88,27 +89,55 @@
 \pagebreak
 \vspace{0.5cm}
 \colorbox{gray!40}{\begin{minipage}{17.5cm}
-\bf {WORK EXPERIENCE } 
+\bf {RESEARCH EXPERIENCE } 
 \end{minipage} }
 
 \begin{minipage}{1.05\textwidth}
 \vspace{0.4cm}
-\begin{tabular}{p{3cm} p{14cm} }
-  {\emph{Postdoctoral Researcher}} & University of Pisa, Largo Bruno Pontecorvo, Pisa, Italy 56127 (Oct 2021 --)
+\begin{tabular}{p{2.5cm} p{14.5cm} }
+  {\emph{Postdoctoral Researcher}} & University of Pisa, Largo Bruno Pontecorvo, Pisa, Italy 56127 (Oct 2021 -- present)
 
   \begin{itemize}
-  \item\mbox{} I am now involved in the BelleII Collaboration, more
-    specifically, in upgrade group.
-    An all-pixel vertex detector is under proposal as a replacement of
+  \item I am now involved in the Belle II Collaboration, more
+    specifically, in upgrade group and the Silicon Vertex Detector (SVD).
+  \item An all-pixel vertex detector is under proposal as a replacement of
     the present one. With smaller pixel size, it is capable of higher
-    occupancy and vertex resolution.
+    hit-occupancy in sensors and better vertex resolution.
     I am studying the physics performance using simulation in a
     few benchmark decay channels.
+    The upgrade work is a continuous progress. The detector geometry is
+    periodically in testing with updated material budgets and using improved
+    background predictions.
+  \item I worked on a method to minimise the effect of background in the
+    track reconstruction of the current SVD in Belle II.
+    It exploits the time of SVD clusters event-by-event, grouping the clusters
+    depending on the contribution by different collisions.
+    Then only the best possible group of
+    clusters are chosen for the reconstruction. Using this method,
+    the rate of fake-tracks is reduced significantly keeping the efficiency
+    unchanged.
+  \item I managed to find and resolve the issue of high execution time consumed by
+    the SVD cluster-time calibration process. The issue was quite technical.
+    The merging of histograms from large number of ROOT files consumes time and
+    SVD requires more than thousand histograms during calibration.
+    I managed to reduce the number of histograms by using multi-dimensional
+    histograms which in turns reduces
+    the execution time dramatically from days to minutes.
   \end{itemize}
-  \\
 
-  {\emph{Research Scholar}} & Tata Institute of Fundamental Research, Mumbai, Maharashtra, India 400005 (Aug 2014 -- Aug 2021)
+\end{tabular}
+\end{minipage}
 
+\pagebreak
+\vspace{0.5cm}
+\colorbox{gray!40}{\begin{minipage}{17.5cm}
+\bf {RESEARCH EXPERIENCE } 
+\end{minipage} }
+
+\begin{minipage}{1.05\textwidth}
+\vspace{0.4cm}
+\begin{tabular}{p{2.5cm} p{14.5cm} }
+  {\emph{Research Scholar}} & Tata Institute of Fundamental Research, Mumbai, India (Aug 2014 -- Aug 2021)
   \begin{itemize}
   \item I was involved in India-based Neutrino
     Observatory (INO). My works were solely contributed towards
@@ -120,15 +149,21 @@
     sense the signature of the muons produced in the charged-current
     interaction of neutrinos. Many prototype detector stacks were thus
     planned to study the performance of the RPCs and the electronics
-    along with the data acquisition systems. I clocked a presence
+    along with the data acquisition systems. I clocked a significant presence
     in commissioning two prototypes, gaining experience and contributing
     in some key aspects.
   \item Involved in the mechanical facets of commissioning the detectors.
   \item Formulated and implemented a easy-to-use system to estimate the
-    leak tightness of RPC gaps.
+    leak tightness of RPC gaps with high precision, which is in use at
+    collaborating institutes and industries.
   \item Developed an algorithm to fetch events with multiple tracks
     in the detector. Also isolated the events occurring due to the
     random coincidences in order to test the CORSIKA simulation.
+  \item As the part of the mini-ICAL team, I was stationed at the complex
+    of \emph{Saint-Gobain Glass India Pvt.Ltd.} for 2\,months
+    supervising the production, especially stream-lining the quality-control
+    of first batch of RPCs
+    to be used in the prototype of ICAL.
   \item Worked in developing a method to reconstruct muon momentum
     from the data obtained in the magnetised mini-ICAL detector
     consisting of 10 layers of RPCs for the measurement of the charge
@@ -141,88 +176,102 @@
 
 \pagebreak
 \vspace{0.4cm}
-\colorbox{gray!40}{\begin{minipage}{17.5cm}
-\bf { STATEMENT OF RESEARCH } 
+\colorbox{gray!40}{\begin{minipage}{16.2cm}
+\bf { STATEMENT OF RESEARCH INTERESTS} 
 \end{minipage} }
-\begin{minipage}{1.05\textwidth}
-\vspace{0.4cm}
-\hspace{0.5cm}
-My main research interest rests in the high-energy physics, especially
-in the design of the detector components, develop those, commission in
-a large detector system and then extract physics out of the whole
-system.
+%% \vspace*{0.0cm}
+%% \hspace{0.5cm}
 
-\hspace{0.5cm}
-Modern particle detector setups are complex. These
-setups consist of various kinds of particle detectors.
-The GEANT4 simulation toolkit is proven to be effective in these
-cases, simulating the properties and response of the various
-components. This simulation provides a crucial role in understanding
-the feasibility and the physics potential of the experiment.
+\begin{justify}
 
-\hspace{0.5cm}
-Once these detector setups are commissioned, it is hard to access the
-individual components. Hence much interest is given towards the
-characterisation of each detector before integrating in the setup.
-This process is generally repetitive and thus should require least
-presence of human and minimal time. I am interested in designing
-user-friendly test rigs to map the necessary traits of a detector.
+  My main research interest rests in the high-energy physics, especially
+  in the design, development and commissioning of the detector components
+  along with the analysis of acquired data.\\
+  \hspace*{0.6cm}
+  Modern particle detector setups are complex. These
+  setups consist of various kinds of particle detectors.
+  The GEANT4 simulation toolkit is proven to be effective in these
+  cases, simulating the properties and response of the various
+  components. This simulation provides a crucial role in understanding
+  the feasibility and the physics potential of the experiment.
+  Once these detector setups are commissioned, it is hard to access the
+  individual components. Hence much interest is given towards the
+  characterisation of each detector before integrating in the setup.
+  This process is generally repetitive and thus should require least
+  presence of human and minimal time.
+  %%  I am interested in designing
+  %% user-friendly test rigs to map the necessary traits of a detector.\\
+  %% \hspace*{0.6cm}
+  As the detectors grow larger, the number of data-channels also
+  increases accordingly. So processing the events in order to extract
+  the useful information by avoiding noises
+  becomes more challenging. Along with this, an algorithm to reconstruct
+  track parameters is required to optimise specific to the detector
+  setup.\\
+  \hspace*{0.6cm}
+  My past involvement with the {\it India-based Neutrino Observatory (INO)} project
+  let me work with a few prototype setups; especially
+  a 12-layer RPC stack and a magnetised
+  mini-ICAL, both are of tracker type. Both the setups gave me plenty of
+  opportunity to gain knowledge on the aforesaid topics. Apart from
+  that I learned about the difficulties and hold-ups while commissioning
+  a detector setup and also gained experience of the solutions.
+  I had developed the leak test system from scratch and it is now
+  used by the whole INO collaboration. Similarly during the
+  commissioning of mini-ICAL, I had solved many challenging problems; one of
+  them even saved us from dismantling the whole magnet.
+  In summary, I gained experience in both software and hardware during this time.\\
+  %% ,
+  %% e.g., how to unbolt the aluminium strips from the commissioned
+  %% miniICAL magnet system without dismantling the whole magnet.
+  %% These aluminium strips were bolted to the
+  %% magnet system for the smooth movement of the RPC trays in each layer,
+  %% but due to the magnetic field, the whole system shrinks beyond our
+  %% estimation, buckling those strips
+  %% .\\
+  %% During commissioning of RPC detector at miniICAL, it was found that
+  %% few RPC can not hold pressure more than 10mm of water column, which is
+  %% necessary for stable operation of the RPC. I had temporarily
+  %% solved that button popup issue by installing suitable mylar balloon
+  %% over the RPC trays.\\
+  %% \hspace*{0.6cm}
+  %% My concept of a FTIR detector setup to
+  %% monitor the INO gas system would have been much cheaper than a
+  %% commercial one, but could not finish due to shortage of the components.\\
+  \hspace*{0.6cm}
+  My current involvement in the Belle II experiment gave me additional
+  opportunity to boost my knowledge in the accelerator based experiments.
+  Here I got to learn about the schemes and frameworks of the software tools
+  used along with the physics goals of the experiment.
+  An all-pixel vertex detector is under proposal as a replacement of
+  the present one in the Belle II detector. With smaller pixel size, it is
+  capable of higher occupancy and vertex resolution. I am highly involved
+  in this group and contributing in assessing the physics performance of the
+  new setup using simulation in a few benchmark decay channels.
+  I am also working in the existing Silicon Vertex Detector of Belle II to
+  reduce the effect of background in track finding. I devised a technique
+  of groping the position clusters based on time to suppress the clusters
+  contributed by background collision. This reduces the rate of fake-tracks
+  significantly.\\
+  \hspace*{0.6cm}
+  I carried forward my experience from INO to Belle II, enriching it
+  significantly and want to spend more time in both SVD and the upgrade.
+  I want to explore more in the tracking of the SVD believing in improving
+  the track finding efficiency keeping the rate of fake tracks low. Along with
+  this, I am going to work on the upgrade of the vertex detector, improving
+  the simulation software and also getting involved in the hardware development.\\
+  \hspace*{0.6cm}
+  The Belle II team in Pisa is excellent in both work and motivation.
+  It will be great to continue work here.
 
-\hspace{0.5cm}
-As the detectors grow larger, the number of data-channels also
-increases accordingly. So processing the events in order to extract
-the useful information by avoiding noises (namely, track-finding)
-becomes more challenging. Along with this, an algorithm to reconstruct
-track parameters is required to optimise specific to the detector
-setup.
-
-\hspace{0.5cm}
-The prototype detector setups, 12-layer RPC stack and magnetised
-mini-ICAL, are of tracker type. Both the setups gave me plenty of
-opportunity to gain knowledge on the aforesaid topics. Apart from
-that I learned about the difficulties and hold-ups while commissioning
-a detector setup and also gained experience of the solutions.
-
-\hspace{0.5cm}
-I had developed the leak test system from scratch and it is now
-used by the whole INO collaboration. Similarly during the
-commissioning of miniICAL I had solved many challenging problems,
-e.g., how to unbolt the aluminium strips from the commissioned
-miniICAL magnet system without dismantling the whole magnet.
-These aluminium strips were bolted to the
-magnet system for the smooth movement of the RPC trays in each layer,
-but due to the magnetic field, the whole system shrinks beyond our
-estimation, buckling those strips.
-During commissioning of RPC detector at miniICAL, it was found that
-few RPC can not hold pressure more than 10mm of water column, which is
-necessary for stable operation of the RPC. I had temporarily
-solved that button popup issue by installing suitable mylar balloon
-over the RPC trays.
-
-\hspace{0.5cm}
-My concept of a FTIR detector setup to
-monitor the INO gas system would have been much cheaper than a
-commercial one, but could not finish due to shortage of the components.
-
-
-\hspace{0.5cm}
-My current involvement in the BelleII project gave me additional
-opportunity to boost my knowledge in the accelerator based experiments.
-Here I got to learn about the schemes and frameworks of the software tools
-used along with the physics goals.
-An all-pixel vertex detector is under proposal as a replacement of
-the present one in the BelleII detector. With smaller pixel size, it is
-capable of higher occupancy and vertex resolution.
-I am studying the physics performance using simulation in a
-few benchmark decay channels.
-
-\end{minipage}
+\end{justify}
 
 \pagebreak
 \vspace{0.4cm}
-\colorbox{gray!40}{\begin{minipage}{17.5cm}
+\colorbox{gray!40}{\begin{minipage}{16.2cm}
     \bf {LIST OF PUBLICATIONS} 
 \end{minipage} }
+\begin{justify}
 %% \vspace{0.4cm}
 \begin{enumerate}[a.]
 \item Papers:
@@ -247,7 +296,7 @@ few benchmark decay channels.
     %% \item I~Adachi~et~al. \emph{Measurement of branching fractions and direct $CP$ asymmetries of $B \to K \pi$ and $B \to \pi \pi$ decays in 2019-2022 Belle II data}, \href{}{}
     %% \item I~Adachi~et~al. \emph{Measurement of time-dependent $CP$ violation in $B^0 \to K_S^0 K_S^0 K_S^0$ using 2019-2022 Belle II data}, \href{}{}
     %% \item I~Adachi~et~al. \emph{Determination of $|V_{cb}|$ using $\bar{B}{}^0 \to D^{*+} \ell^{\mathstrut -} \bar{\nu}{}_{\ell}$ decays with Belle II}, \href{}{}
-  \item I~Adachi~et~al. \emph{Measurement of $CP$ violation in $B^0 \rightarrow K^0_{S} \pi^0$}, \href{https://doi.org/10.1103/PhysRevLett.131.111803}{Physical Review Letters 131 (2023) 121802}
+  \item I~Adachi~et~al. \emph{Measurement of $CP$ violation in $B^0 \rightarrow K^0_{S} \pi^0$ decays at Belle II}, \href{https://doi.org/10.1103/PhysRevLett.131.111803}{Physical Review Letters 131 (2023) 111803}
   \item I~Adachi~et~al. \emph{Measurement of $CP$ asymmetries in $B^0 \rightarrow \phi K^0_{S}$ decays with Belle~II}, \href{https://doi.org/10.1103/PhysRevD.108.072012}{Physical Review D 108 (2023) 072012}
   \item I~Adachi~et~al. \emph{Novel method for the identification of the production flavor of neutral charmed mesons}, \href{https://doi.org/10.1103/PhysRevD.107.112010}{Physical Review D 107 (2023) 112010}
   \item I~Adachi~et~al. \emph{Search for a $\tau^+\tau^-$ resonance in $e^{+}e^{-}\rightarrow \mu^{+}\mu^{-} \tau^+\tau^-$ events with the Belle~II experiment}, \href{https://doi.org/10.1103/PhysRevLett.131.121802}{Physical Review Letters 131 (2023) 121802}
@@ -269,36 +318,37 @@ few benchmark decay channels.
   \item  G.~Majumder~et~al., \emph{Development of a Resistive Plate Chamber with heat strengthened glass in 13th Workshop on Resistive Plate Chambers and Related Detectors (RPC2016)}, \href{https://doi.org/10.1088/1748-0221/11/09/C09019}{Journal of Instrumentation 11 (2016) C09019}
   \end{enumerate}
 \end{enumerate}
+\end{justify}
 
 \newpage
 
-\colorbox{gray!40}{\begin{minipage}{17.5cm}
+\colorbox{gray!40}{\begin{minipage}{16.2cm}
 \bf {Conferences/Workshops} 
 \end{minipage} }
-\begin{minipage}{1.05\textwidth}
+\begin{minipage}{1.0\textwidth}
  \vspace{0.4cm}
 \begin{enumerate}
   
 \item Attended \emph{16$^{\text{th}}$ Topical Seminar on Innovative Particle and Radiation Detectors (IPRD23) held at Siena, Italy during 25--29 September 2023.} \\
-  {\bf{Talk Presented:}} \textsc{The Silicon Vertex Detector of the Belle II Experiment}.
+  {\bf{Talk:}} \textsc{The Silicon Vertex Detector of the Belle II Experiment}.
 
 \item Attended \emph{XXIV DAE-BRNS High Energy Physics Symposium}  held at NISER, Bhubaneswar, India during 14-18 December, 2020. \\
-  {\bf{Poster Presented:}} \textsc{Correlation of muons arrival times from two different cosmic showers}.\\
-  {\bf{Talk Presented:}} \textsc{Cosmic muon momentum spectra at Madurai}.
+  {\bf{Poster:}} \textsc{Correlation of muons arrival times from two different cosmic showers}.\\
+  {\bf{Talk:}} \textsc{Cosmic muon momentum spectra at Madurai}.
 
 \item Attended \emph{XXIII DAE-BRNS High Energy Physics Symposium}  held at IIT Madras, Chennai, India during 10-14 December, 2018. \\
-  {\bf{Poster Presented:}} \textsc{Muon Multiplicity in $2$\,m\,$\times$\,2\,m RPC and comparison with CORSIKA simulation}.
+  {\bf{Poster:}} \textsc{Muon Multiplicity in $2$\,m\,$\times$\,2\,m RPC and comparison with CORSIKA simulation}.
 
 \item Attended \emph{National Symposium on Particles, Detectors \& Instrumentation (NSPDI 2017)} held at Tata Institute of Fundamental Research, Mumbai,  India during 4-7 October, 2017. \\
-  {\bf{Poster Presented:}} \textsc{Estimation of Leak of a Resistive Plate Chamber by Monitoring Absolute Pressure}.
+  {\bf{Poster:}} \textsc{Estimation of Leak of a Resistive Plate Chamber by Monitoring Absolute Pressure}.
 
 \item Attended \emph{13th Workshop on Resistive Plate Chambers and
 Related Detectors (RPC2016)} held at Ghent University, Ghent,
   Belgium during 22--26 February, 2016.\\
-  {\bf{Poster Presented:}} \textsc{Leak Rate Estimation of a Resistive Plate Chamber Gap by Monitoring Absolute Pressure}.
+  {\bf{Poster:}} \textsc{Leak Rate Estimation of a Resistive Plate Chamber Gap by Monitoring Absolute Pressure}.
   
 \item Attended \emph{XXII DAE-BRNS High Energy Physics Symposium}  held at University of Delhi, Delhi, India during 12-16 December, 2016. \\
-  {\bf{Poster Presented:}} \textsc{Estimation of Leak of a Resistive Plate Chamber by Monitoring Absolute Pressure}.
+  {\bf{Poster:}} \textsc{Estimation of Leak of a Resistive Plate Chamber by Monitoring Absolute Pressure}.
   
 \item Attended the course of \emph{Japan-Asia Youth Exchange program in Science (SAKURA Exchange Program in Science)} administered by Japan Science and Technology Agency and held at Osaka university, Osaka, Japan during 29--04 December, 2015. 
 
