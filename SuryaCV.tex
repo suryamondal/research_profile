@@ -95,28 +95,52 @@
 \begin{minipage}{1.05\textwidth}
 \vspace{0.4cm}
 \begin{tabular}{p{2.5cm} p{14.5cm} }
-  {\emph{Postdoctoral Researcher}} & University of Pisa, Largo Bruno Pontecorvo, Pisa, Italy 56127 (Oct 2021 -- present)
+  {\emph{Postdoctoral Researcher}} & University of Pisa, Largo Bruno Pontecorvo, Pisa, Italy 56127 (Oct 2021 -- Oct 2024)
 
   \begin{itemize}
   \item I am now involved in the Belle II Collaboration, more
     specifically, in upgrade group and the Silicon Vertex Detector (SVD).
-  \item An all-pixel vertex detector is under proposal as a replacement of
+  \item An all-pixel vertex detector (VTX) is under proposal as a replacement of
     the present one. With smaller pixel size, it is capable of higher
     hit-occupancy in sensors and better vertex resolution.
     I am studying the physics performance using simulation in a
-    few benchmark decay channels.
+    few benchmark decay channels, $B^{0} \rightarrow D^{*-}\mu^{+}\nu_{\mu}$,
+    $D^{*-} \rightarrow \overline{D}^{0} \pi^{-}_{\text{soft}}$,
+    $\overline{D}^{0} \rightarrow K^{+}[\pi^{-}\pi^{+}]\pi^{-}$.
+    Along with the unknown flight length of $B^0$ and combinatorials due to
+    negligible $D^{*}$ flight length, low momentum of $\pi_{\text{soft}}$ makes
+    the reconstruction of these channels rely heavily on the vertex
+    detector. Along with excellent vertexing capabilities, VTX performs very well
+    in terms of efficiency. 
+    This performance study is important for the Belle II Upgrade Program and will be
+    published in the next Conceptual Design Report (CDR).
+
     The upgrade work is a continuous progress. The detector geometry is
     periodically in testing with updated material budgets and using improved
-    background predictions.
-  \item I worked on a method to minimise the effect of background in the
+    background predictions. 
+
+  \item I developed on a new algorithm to minimise the effect of background in the
     track reconstruction of the current SVD in Belle II.
     It exploits the time of SVD clusters event-by-event, grouping the clusters
     depending on the contribution by different collisions.
-    Then only the best possible group of
-    clusters are chosen for the reconstruction. Using this method,
-    the rate of fake-tracks is reduced significantly keeping the efficiency
+    Only the best group of
+    clusters is chosen for the reconstruction. Using this method,
+    the rate of fake-tracks is reduced significantly while keeping the efficiency
     unchanged.
-  \item I managed to find and resolve the issue of high execution time consumed by
+
+    This module is now part of the official release of the Belle II software and under
+    test in data.
+    This method will play an important role at the target luminosity helping to set the limit
+    of SVD hit-occupancy to \SI{\sim6}{\%}, which is higher than the one expected from the background
+    extrapolation \SI{\sim4.7}{\%}, increasing the safety margin. Additionally, it is now
+    used as helper to the SVD cluster-time calibration which was previously significantly effected
+    by the background hits biasing the calibration.
+
+  \item I improved the quality of the cluster time calibration on data by implementing a
+    a new calibration that removes the cluster-size dependant bias on cluster-time.
+
+  \item Alongside, I contributed to the Belle II software in order to improve its quality.
+    I managed to find and resolve the issue of high execution time consumed by
     the SVD cluster-time calibration process. The issue was quite technical.
     The merging of histograms from large number of ROOT files consumes time and
     SVD requires more than thousand histograms during calibration.
@@ -184,6 +208,8 @@
 
 \begin{justify}
 
+  Currently I am at the University of Pisa since October 2021 and should end in October 2024.
+  This position will be a great opportunity for me to plan and continue my research ahead.
   My main research interest rests in the high-energy physics, especially
   in the design, development and commissioning of the detector components
   along with the analysis of acquired data.\\
@@ -254,12 +280,23 @@
   contributed by background collision. This reduces the rate of fake-tracks
   significantly.\\
   \hspace*{0.6cm}
-  I carried forward my experience from INO to Belle II, enriching it
-  significantly and want to spend more time in both SVD and the upgrade.
+  I carried forward my experience and skills from INO to Belle II, enriching it
+  significantly and want to spend more time in both SVD and the vertex detector (VTX) upgrade.
+  \\
+  $\blacksquare$ Large uncertainity in the prediction of background at the peak luminosity is
+  going to effect the tracking performance and the the latest estimate reduced the
+  tracking effiency to \SI{91}{\%}. The effort to recover the efficiency is fundamental for the
+  physics program.
   I want to explore more in the tracking of the SVD believing in improving
-  the track finding efficiency keeping the rate of fake tracks low. Along with
-  this, I am going to work on the upgrade of the vertex detector, improving
-  the simulation software and also getting involved in the hardware development.\\
+  the track finding efficiency keeping the rate of fake tracks low. Now the method of
+  grouping is not used at its full potential and there are large room for improvement;
+  one of which is to use MVA to better filter groups selected for tracking.
+  \\
+  $\blacksquare$ I will be involved greatly in the in the upgrade of the vertex detector,
+  not only in the benchmarking and software developements, also in the hardware activities.
+  I can contribute to various aspects of the design and testing of the sensors for next few
+  years targeting the Belle II Long Shutdown 2 in 2027.
+  \\
   \hspace*{0.6cm}
   The Belle II team in Pisa is excellent in both work and motivation.
   It will be great to continue work here.
@@ -274,7 +311,7 @@
 \begin{justify}
 %% \vspace{0.4cm}
 \begin{enumerate}[a.]
-\item Papers:
+\item Publications:
   \begin{enumerate}[1.]
     %% \item I~Adachi~et~al. \emph{}, \href{}{}
     %% \item I~Adachi~et~al. \emph{}, \href{}{}
@@ -300,22 +337,22 @@
   \item I~Adachi~et~al. \emph{Measurement of $CP$ asymmetries in $B^0 \rightarrow \phi K^0_{S}$ decays with Belle~II}, \href{https://doi.org/10.1103/PhysRevD.108.072012}{Physical Review D 108 (2023) 072012}
   \item I~Adachi~et~al. \emph{Novel method for the identification of the production flavor of neutral charmed mesons}, \href{https://doi.org/10.1103/PhysRevD.107.112010}{Physical Review D 107 (2023) 112010}
   \item I~Adachi~et~al. \emph{Search for a $\tau^+\tau^-$ resonance in $e^{+}e^{-}\rightarrow \mu^{+}\mu^{-} \tau^+\tau^-$ events with the Belle~II experiment}, \href{https://doi.org/10.1103/PhysRevLett.131.121802}{Physical Review Letters 131 (2023) 121802}
+  \item G.~Batignani~et~al., \emph{Simulation of an all-layer monolithic pixel vertex detector for the Belle II upgrade in 16th Pisa Meeting on Advanced Detectors}, \href{https://doi.org/10.1016/j.nima.2022.167616}{NIMA 1045 (January 2023) 167616}
   \item Suryanarayan~Mondal~et~al. \emph{Study of Particle Multiplicity of Cosmic Ray Events using 2\,m\,$\times$\,2\,m Resistive Plate Chamber Stack at IICHEP-Madurai}, \href{https://doi.org/10.1007/s10686-020-09685-6}{Experimental Astronomy 51 (2021) 17--32}
   \item Suryanarayan~Mondal~et~al. \emph{Leak test of Resistive Plate Chamber gap by monitoring absolute pressure}, \href{https://doi.org/10.1088/1748-0221/14/04/P04009}{Journal of Instrumentation 14 (April 2019) P04009}
+  \item S.~Mondal~et~al., \emph{Leak Rate Estimation of a Resistive Plate Chamber Gap by Monitoring Absolute Pressure in 13th Workshop on Resistive Plate Chambers and Related Detectors (RPC2016)}, \href{https://doi.org/10.1088/1748-0221/11/11/C11009}{Journal of Instrumentation 11 (Nov 2016) C11009}
+  \item  G.~Majumder~et~al., \emph{Development of a Resistive Plate Chamber with heat strengthened glass in 13th Workshop on Resistive Plate Chambers and Related Detectors (RPC2016)}, \href{https://doi.org/10.1088/1748-0221/11/09/C09019}{Journal of Instrumentation 11 (2016) C09019}
   \end{enumerate} 
 \end{enumerate} 
 \begin{enumerate}[b.]
 \item Proceedings
   \begin{enumerate}[1.]
-  \item G.~Batignani~et~al., \emph{Simulation of an all-layer monolithic pixel vertex detector for the Belle II upgrade in 16th Pisa Meeting on Advanced Detectors}, \href{https://doi.org/10.1016/j.nima.2022.167616}{NIMA 1045 (January 2023) 167616}
   \item Suryanarayan~Mondal~et~al., \emph{Cosmic Muon Momentum Spectra at Madurai in XXIV DAE High Energy Physics Symposium}, \href{https://doi.org/10.1007/978-981-19-2354-8_134}{Springer Proceedings in Physics 277 (October 2022) 743--747}
   \item Suryanarayan~Mondal~et~al., \emph{Study of Particle Multiplicity by 2\,m\,$\times$\,2\,m Resistive Plate Chamber Stack at IICHEP-Madurai in XXIII DAE High Energy Physics Symposium}, \href{https://doi.org/10.1007/978-981-33-4408-2_172}{Springer Proceedings in Physics 261 (May 2021) 1155--1158}
   \item G.~Majumder and S.~Mondal, \emph{Design, construction and performance of magnetised mini-ICAL detector module in The 39th International Conference on High Energy Physics (ICHEP2018)}, \href{https://doi.org/10.22323/1.340.0360}{Proceedings of Science 340 (2019) 360}
   \item Suryanarayan~Mondal~et~al., \emph{Estimation of Leak of a Resistive Plate Chamber by Monitoring Absolute Pressure in XXII DAE High Energy Physics Symposium}, \href{https://doi.org/10.1007/978-3-319-73171-1_207}{Springer Proceedings in Physics 203 (May 2018) 851-853}
   \item G.~Majumder~et~al., \emph{Development of a Resistive Plate Chamber with Heat Strengthened Glass in XXII DAE High Energy Physics Symposium}, \href{https://doi.org/10.1007/978-3-319-73171-1_135}{Springer Proceedings in Physics 203 (2018) 575-578}
   \item S.~Pethuraj~et~al., \emph{Measurement of Angular Distribution and Integrated Flux of Cosmic Ray Muons Using 2\,m$\times$2\,m RPC Stack at IICHEP Madurai in XXII DAE High Energy Physics Symposium}, \href{https://doi.org/10.1007/978-3-319-73171-1_205}{Springer Proceedings in Physics 203 (2018) 845-846}
-  \item S.~Mondal~et~al., \emph{Leak Rate Estimation of a Resistive Plate Chamber Gap by Monitoring Absolute Pressure in 13th Workshop on Resistive Plate Chambers and Related Detectors (RPC2016)}, \href{https://doi.org/10.1088/1748-0221/11/11/C11009}{Journal of Instrumentation 11 (Nov 2016) C11009}
-  \item  G.~Majumder~et~al., \emph{Development of a Resistive Plate Chamber with heat strengthened glass in 13th Workshop on Resistive Plate Chambers and Related Detectors (RPC2016)}, \href{https://doi.org/10.1088/1748-0221/11/09/C09019}{Journal of Instrumentation 11 (2016) C09019}
   \end{enumerate}
 \end{enumerate}
 \end{justify}
